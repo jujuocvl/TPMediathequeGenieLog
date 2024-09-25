@@ -18,7 +18,8 @@ public abstract class Item {
 
 	@Override
 	public String toString() {
-		return title;
+		return "title=" + title;
 	}
+	public abstract void accept(Visitor v);
 	
 }
